@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+   
+
+body {
+        
+    background-image: url("/imagenes/2.jpg");
+  background-size:  100% cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+  }
+
+
+
+
+
+
+#grilla {
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "nav footer footer";
+    grid-template-rows: 100px 500px 500px 100px;
+    grid-template-columns: 5% auto 0%;
+}
+.border {
+    border: 3px solid black;
+}
+header{
+    grid-area: header;
+}
+footer {
+    grid-area: footer;
+}
+section#productos {
+    grid-area: productos;
+}
+section#servicios {
+    grid-area: servicios;
+}
+nav {
+    grid-area: nav;
+}
+aside {
+    grid-area: publicidad;
+}
+a:visited {
+    color: #437A16;
+  }
+.menu li:active {
+    background-color: black;
+ 
+  }
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 17px;
+}
+.logo {
+    width: 17%;
+    padding: 10px;
+}
+.menu li {
+    padding: 10px 35px 10px 50px;
+    margin: 15px;
+    height: 20px;
+    background-color: grey;
+    font-size: 20px;
+    display: inline-block;
+    border: solid 3px whitesmoke;
+}
+.menu .logo {
+    float: left;
+}
+.menu li a:hover{
+    color: white;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+}
+.seccion-video{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+.parrafo-index {
+    font-size: 30px;
+    color: gray;
+    text-align: center;
+}
+.seccion-imagenes {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items:center;
+}
+.seccion-imagenes img{
+    width: 550px ;
+}
+.textos-imagenes {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-around;
+    align-items:center;
+}
+.textos-imagenes p {
+    font-size: 30px;
+    text-align: center;
+    color: gray;
+}
+
+
+
+
+.parrafo-index {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#paginas-web {
+    background-color: black;
+    display:flex;
+
+    flex-direction: column;
+    
+}
+
+#paginas-web p {
+    padding: 0 0 150px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    
+}
+#paginas-web p a:hover{color: white;}
+
+#paginas-web a {
+    text-align: center;
+color: gray;
+text-decoration: none;
+}
+footer {
+    background-color: black;
+}
+footer p {
+  font-size: 30px;
+  color: gray;
+  
+}
